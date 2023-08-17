@@ -1,14 +1,14 @@
 server:
-  port: 0
+  port: 8761
 
 spring:
   application:
-    name: catalog-service
+    name: eureka-server-parcial
 
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: true
+    register-with-eureka: false
+    fetch-registry: false
     registry-fetch-interval-seconds: 5
     healthcheck:
       enabled: true
@@ -16,8 +16,6 @@ eureka:
       default-zone: http://localhost:8761/eureka
   instance:
     prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 10
 
 managment:
   info:
@@ -26,5 +24,3 @@ managment:
     web:
       exposure:
         inclued: "*"
-
-
