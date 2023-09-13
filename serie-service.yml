@@ -27,3 +27,7 @@ managment:
     web:
       exposure:
         inclued: "*"
+
+queue:
+  serie:
+    name: serieQueue
