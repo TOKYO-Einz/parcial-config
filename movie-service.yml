@@ -37,4 +37,8 @@ managment:
       exposure:
         inclued: "*"
 
+queue:
+  movie:
+    name: movieQueue
+
 
