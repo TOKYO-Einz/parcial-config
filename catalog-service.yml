@@ -28,4 +28,10 @@ managment:
       exposure:
         inclued: "*"
 
+queue:
+  serie:
+    name: serieQueue
+  movie:
+    name: movieQueue
+
 
