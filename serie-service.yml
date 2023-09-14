@@ -5,6 +5,33 @@ spring:
   application:
     name: serie-service
 
+  mongodb:
+    embedded:
+      version: 4.0.2
+  data:
+    mongodb:
+      database: test
+      port: 27017
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  zipkin:
+    base_url: http://localhost:9411/
+    enabled: true
+
+  resilience4j:
+    circuitbreaker:
+      instances:
+        myCircuitBreaker:
+          ringBufferSizeInClosedState: 5
+          ringBufferSizeInHalfOpenState: 3
+          waitDurationInOpenState: 10s
+          failureRateThreshold: 50    
+
 eureka:
   client:
     register-with-eureka: true
