@@ -1,7 +1,9 @@
 server:
   port: 0
 
-spring:   
+spring:
+  application:
+    name: catalog-service
   mongodb:
     embedded:
       version: 4.0.2
