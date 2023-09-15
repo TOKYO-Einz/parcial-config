@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: catalog-service
+    
   mongodb:
     embedded:
       version: 4.0.2
