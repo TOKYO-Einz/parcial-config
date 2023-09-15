@@ -10,6 +10,7 @@ spring:
       version: 4.0.2
   data:
     mongodb:
+      hodt: localhost
       database: test
       port: 27019
   rabbitmq:
