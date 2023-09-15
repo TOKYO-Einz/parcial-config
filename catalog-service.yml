@@ -3,14 +3,12 @@ server:
 
 spring:
   application:
-    name: catalog-service
-    
+    name: catalog-service    
   mongodb:
     embedded:
       version: 4.0.2
   data:
-    mongodb:
-      hodt: localhost
+    mongodb:      
       database: test
       port: 27019
   rabbitmq:
